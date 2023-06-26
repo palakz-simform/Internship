@@ -1,0 +1,105 @@
+{
+    "current_page": 1,
+    "data": [
+        {
+            "name": "Hello",
+            "details": "235 q425 sadfasdfweasdf sdf sadfasdfasdfasdf",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/400px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg",
+            "price": "124123",
+            "id": 1089,
+            "createdAt": "2023-05-01T05:00:59.000000Z",
+            "updatedAt": "2023-05-01T05:00:59.000000Z"
+        },
+        {
+            "name": "asdf325",
+            "details": "sdaf asdf asd fasdf waetwqert gasgasgfasfg",
+            "image": "https://w7.pngwing.com/pngs/38/708/png-transparent-car-mercedes-car-love-compact-car-vehicle.png",
+            "price": "1141242",
+            "id": 1088,
+            "createdAt": "2023-05-01T04:59:50.000000Z",
+            "updatedAt": "2023-05-01T04:59:50.000000Z"
+        },
+        {
+            "name": "Perfect",
+            "details": "wt wert wrt wqrt ertyr teu eryu rtyu sdfgdgf",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VW_Kuebelwagen_1.jpg/400px-VW_Kuebelwagen_1.jpg",
+            "price": "45345",
+            "id": 1087,
+            "createdAt": "2023-05-01T04:57:34.000000Z",
+            "updatedAt": "2023-05-01T04:57:34.000000Z"
+        },
+        {
+            "name": "asdf",
+            "details": "fdg sdfg sdfg sdfg ert ery ewry we wey",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/400px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg",
+            "price": "34634",
+            "id": 1086,
+            "createdAt": "2023-05-01T04:55:48.000000Z",
+            "updatedAt": "2023-05-01T04:55:48.000000Z"
+        },
+        {
+            "name": "Porsche",
+            "details": "Li kd ksa asd hgd iehcn ;lkj jsdf ieh dasf",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG/400px-Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG",
+            "price": "123413",
+            "id": 1085,
+            "createdAt": "2023-05-01T04:47:18.000000Z",
+            "updatedAt": "2023-05-01T04:47:18.000000Z"
+        },
+        {
+            "name": "911",
+            "details": "FDAFDDS asd  da dasd aldmkmk mklmn kb bo",
+            "image": "https://www.kindpng.com/picc/m/162-1627388_porsche-911-gt2-rs-porsche-911-991-gt2.png",
+            "price": "1000000",
+            "id": 1073,
+            "createdAt": "2023-05-01T03:38:03.000000Z",
+            "updatedAt": "2023-05-01T03:38:59.000000Z"
+        },
+        {
+            "name": "Cruse",
+            "details": "Chevrolet Camaro, that combines aerodynamic performance with classic style and will attract attention wherever you go.",
+            "image": "https://w7.pngwing.com/pngs/38/708/png-transparent-car-mercedes-car-love-compact-car-vehicle.png",
+            "price": "1000000",
+            "id": 1072,
+            "createdAt": "2023-05-01T03:36:16.000000Z",
+            "updatedAt": "2023-05-01T03:36:36.000000Z"
+        },
+        {
+            "name": "Fortuner",
+            "details": "Chevrolet Camaro, that combines aerodynamic performance with classic style and will attract attention wherever you go.",
+            "image": "https://w7.pngwing.com/pngs/859/326/png-transparent-car-toyota-fortuner-trd-sportivo-auto-show-car-glass-headlamp-car.png",
+            "price": "123123",
+            "id": 1071,
+            "createdAt": "2023-05-01T03:35:13.000000Z",
+            "updatedAt": "2023-05-01T03:35:47.000000Z"
+        },
+        {
+            "name": "BMW",
+            "details": "BMW, in full Bayerische Motoren Werke AG, German automaker noted for quality sports sedans and motorcycles",
+            "image": "https://images.pexels.com/photos/100650/pexels-photo-100650.jpeg?cs=srgb&dl=pexels-mike-b-100650.jpg&fm=jpg",
+            "price": 325346,
+            "id": 1070,
+            "createdAt": "2023-05-01T03:35:06.000000Z",
+            "updatedAt": "2023-05-01T03:35:06.000000Z"
+        },
+        {
+            "name": "Camero",
+            "details": "Chevrolet Camaro, that combines aerodynamic performance with classic style and will attract attention wherever you go.",
+            "image": "https://w7.pngwing.com/pngs/637/293/png-transparent-chevrolet-camaro-car-general-motors-chevrolet-tahoe-yellow-car-car-performance-car-vehicle.png",
+            "price": "1000000",
+            "id": 1069,
+            "createdAt": "2023-05-01T03:34:45.000000Z",
+            "updatedAt": "2023-05-01T05:00:29.000000Z"
+        }
+    ],
+    "first_page_url": "https://testapi.io/api/dartya/resource/cardata?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "https://testapi.io/api/dartya/resource/cardata?page=1",
+    "next_page_url": null,
+    "path": "https://testapi.io/api/dartya/resource/cardata",
+    "per_page": 50,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 10
+}

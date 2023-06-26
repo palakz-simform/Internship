@@ -1,0 +1,75 @@
+HTML Quotations
+
+https://www.w3schools.com/tags/default.asp
+
+1. Class Swelector
+2. Id selector
+3. Universal Selector
+4. Grouping Selector
+
+input:focus
+input:required
+input:checked
+input:disabled
+
+li:first-child
+li:last-child
+li:nth-child(2n)
+li:nth-last-child(2n-1)
+span:only-child
+li:first-of-type
+li:last-of-type
+li:nth-of-type(2)
+li:nth-last-of-type
+li:only-of-type
+li:not(.green)
+div.red::before
+div.red::after
+
+
+a:link,visited, hover, active
+margin:auto -> center
+float:right
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_form_icon
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <style>
+         [data-red^="12"]{
+           
+            background-color: red;
+           }
+        </style>
+</head>
+<body>
+    <div data-red="01233">This id div</div>
+    <input type="text">
+    <input type="text" required>
+    <input type="checkbox">
+    <div class="red green-text"> 
+        This is div 
+    </div>
+    
+    <span>This is span</span>
+    <div>
+        <span><b>Nested text</b></span>
+        
+    </div>
+    <ul>
+        <li  >Item 1</li>
+        <li class="red"> Item 2</li>
+        <li  class="green">Item 3</li>
+        <li>Item 4</li>
+    </ul>
+   
+    <input type="submit">
+</body>
+</html>
+
+
+Today's Plan(11/1/23):
+1. Continue learning CSS
+2. Start learning Git and GitHub

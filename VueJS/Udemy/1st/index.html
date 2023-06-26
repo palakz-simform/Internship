@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" v-cloak>
+        {{2+2}} <br>
+        {{firstName}} {{lastName}}
+        <br>
+        {{`${firstName} ${lastName.toUpperCase()}`}}
+        <br>
+        <h3>Using function</h3>
+        {{fullName()}}
+
+        <p>{{age}}</p>
+        <hr>
+        <!-- Two way binding -->
+        <h3>Form</h3>
+        <label>First Name</label>
+        <input type="text" v-model="firstName"> <br>
+        <label>Last Name</label>
+        <input type="text" :value="lastName" @input.prevent="updateLastName('Last name event triggered',$event)" />
+
+        <!-- Binding Attributes -->
+        <p><a v-bind:href="url" target="_blank">Google</a></p>
+        <p><a :href="url" target="_blank">Google</a></p>
+
+        <!-- Outputting raw URL -->
+        <p>{{raw_url}}</p>
+        <p v-html="raw_url"></p>
+
+        <!-- Listening Events -->
+    
+        <button type="button"v-on:click="increament">Increament</button>
+        <button type="button" v-on:click="age--">Decreament</button>
+
+        <br>
+        <button type="button" @click="increament">Increament</button>
+        <button type="button" @click="age--">Decreament</button>
+        
+        <!-- Keyboard events -->
+        <br><br>
+        <label>Middle Name</label>
+        <input type="text" @keyup.enter="updateMiddleName"> <br>
+
+        <label>Age</label>
+        <input type="number" v-model.number="age"> <br>
+
+        <!-- Lazy -->
+        <label>First Name</label>
+        <input type="text" v-model.lazy.trim="firstName"> <br>
+
+        <!-- Compute -->
+        <h2>Compute</h2>
+        <p>{{fullName2}}</p>
+
+        <!-- Watchers -->
+
+        <!-- Binding class -->
+        <!-- <div class="circle" :class="{ purple: ispurple}"></div> -->
+        <!-- <div class="circle" :class="circle_classes"></div> -->
+        <div class="circle" :class="[selectedColor,circle_classes]">Hiiii</div>
+        <input type="checkbox" v-model="ispurple"> Purple
+
+        <select v-model="selectedColor">
+            <option value="">White</option>
+            <option value="text-black">Black</option>
+            <option value="text-orange">Orange</option>
+        </select>
+
+        <h1>Binding style</h1>
+        <!-- Binding styles -->
+        <input type="number" v-model="size"> <br>
+        <div class="circle" :class="[selectedColor,circle_classes]" :style="{width: size + 'px', height: size+'px', lineHeight : size+'px'}">Hii</div>
+    
+        <!-- Conditional rendering -->
+        <h1>Conditional Rendering</h1>
+        <p v-if="mode==1">Showing v-if</p>
+        <template v-else-if="mode==2">
+            <p>v-else-if</p>
+            <p>Bonus</p>
+        </template>
+        <p v-else>else</p>
+
+
+        <select v-model="mode">
+            <option value="1">v-if</option>
+            <option value="2">v-else-if</option>
+            <option value="3">v-else</option>
+        </select>
+
+        <!-- v-show -->
+        <i v-show="mode==1">v-show</i>
+
+        <!-- List rendering  -->
+        <ul>
+            <li v-for="(bird,index) in birds" :class="bird" :key="bird">{{bird}}-{{index}}</li>
+        </ul>
+
+        <hr>
+        <ul>
+            <li v-for="(value,key,index) in people">
+                <div>{{key}}-{{value}}-{{index}}</div>             
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

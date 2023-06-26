@@ -1,0 +1,121 @@
+header{
+    background-color: #2874f0;
+}
+.flipkartnav{
+    width:1250px;
+    margin:0px auto;
+   
+    color:white;
+    
+}
+
+.navbar-brand img{
+    padding-top:5px;
+    width:100px;
+
+}
+.form-inline .form-control {
+
+    width:550px;
+    border: none;
+    padding-left: 15px;
+    padding-top:3px;
+    margin-left: 20px;
+    margin-right: 0px;
+    font-size: 14px;
+    outline:none;
+    border-radius: 0px;
+    height:35px;
+}
+.fa-magnifying-glass{
+    background-color: white;
+    padding:9px;
+    color:#0275d8;
+    margin-left: 0px;
+    height:35px;
+    
+}
+.nav-link{
+    color:white;
+    margin-left:40px;
+}
+.dispa:first-child{
+    margin-left:55px;
+}
+.login{
+    background-color: white;
+    color: #2874f0;
+    padding: 5px 30px;
+    height:33px;
+    width:130px;
+    margin-top:3px;
+    border-radius:2px;
+    text-align:center;
+    font-weight: bolder;
+}
+
+.dropdown-item i{
+    color:#2874f0;
+    margin-right:10px;
+}
+.dropdown-item {
+    font-size:15px;
+}
+.nav-link:hover{
+    color:white;
+}
+.fa-cart-shopping{
+    margin-right: 8px;
+}
+.cart{
+    min-width:73px;
+}
+@media screen and (max-width: 1250px) {
+    .form-inline .form-control {
+        width:310px;
+    }
+
+
+}
+@media screen and (max-width: 991px) {
+    .form-inline .form-control {
+        width:350px;
+        margin-left:40px;
+        /*margin:20px 1% 0;*/
+    }
+    .fa-magnifying-glass{
+       display:none;
+    }
+    .navbar-brand img{
+        margin:5px 40px;
+        width:100px;
+    
+    }
+    .dispa:first-child{
+        margin-left:0px;
+    }
+    .login{
+        background-color:white;
+        color: #2874f0;
+        height:35px;
+        width:130px;
+        margin:20px 40px;
+        border-radius:2px;
+        font-weight:bold;
+    }
+    .dropdown-menu {
+        width:85%;
+        margin-left: 40px;
+        margin-bottom:10px;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    .form-inline .form-control {
+        width:300px;
+        margin-left:40px;
+        /*margin:20px 1% 0;*/
+    }
+
+}

@@ -1,0 +1,59 @@
+directive
+
+v-text
+v-html
+v-bind:id
+v-bind:disabled
+v-bind:class
+v-bind:style
+v-if
+v-else
+v-else-if
+v-show
+
+
+git clone : Creates a copy of an existing Git repository. Cloning is the most common way for developers to obtain a working copy of a central repository.
+git pull : Pulling is the automated version of git fetch. It downloads a branch from a remote repository, then immediately merges it into the current branch. This is the Git equivalent of svn update.
+git status : Displays the state of the working directory and the staged snapshot. You’ll want to run this in conjunction with git add and git commit to see exactly what’s being included in the next snapshot.
+git commit -m "test" : Takes the staged snapshot and commits it to the project history. Combined with git add, this defines the basic workflow for all Git users.
+git push origin master : Pushing is the opposite of fetching (with a few caveats). It lets you move a local branch to another repository, which serves as a convenient way to publish contributions. This is like svn commit, but it sends a series of commits instead of a single changeset.
+git add //filename: Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.
+git add . : adds all the files to staging area
+git add filename1 filename2 filename3...
+git add --all
+
+git remote -v : A convenient tool for administering remote connections. Instead of passing the full URL to the fetch, pull, and push commands, it lets you use a more meaningful shortcut.
+git branch : list the number of branches(developer, tester, prepod)
+git branch //branchname : creates a new branch
+git checkout //branchname : connect to the particular branch
+
+
+.git->head file shows current working branch path
+
+to crate bew branch from cdt:
+1. Current connected branch should be cdt
+2. git branch prepod
+(prepod branch will be created but you will not be directly connected to prepod, you will still be connected to cdt )
+2. git checkout -b development 
+(development branch will be created but you will be directly connected to development)
+
+Rename branch name:
+git branch -m //oldname //newname
+
+to merge 
+1. first connect to the branch you want to merge i.e., cdt (merge master to cdt)
+git checkout cdt
+2. git merge master
+
+push to cdt branch
+
+git push origin cdt
+
+git log : The git log command is used to view the history of committed changes within a Git repository.
+
+git ignore : 
+
+Image result for untracked file in git
+Untracked basically means that Git sees a file you didn't have in the previous snapshot (commit), and which hasn't yet been staged;
+
+

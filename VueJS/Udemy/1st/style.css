@@ -1,0 +1,19 @@
+[v-cloak]{
+    display:none;
+}
+.circle{
+    height:150px;
+    width:150px;
+    background-color: rgb(50, 104, 99);
+}
+.purple{
+    height:150px;
+    width:150px;
+    background-color: rgb(205, 90, 216);
+}
+.text-black{
+    color:black;
+}
+.text-orange{
+    color:orange;
+}

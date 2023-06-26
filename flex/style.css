@@ -1,0 +1,13 @@
+.parent {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    cursor: pointer;
+    background-color: palevioletred;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

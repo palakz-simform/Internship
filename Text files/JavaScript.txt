@@ -1,0 +1,713 @@
+First class functions : The ability to use functions as valuesand can be passed as arguments to another function and can be returned from the functions this is know as first class functions in javascript
+Lexical : where the function is written
+Global scope : Variables declared outside the scope (They can be accessed inside the function)
+Local scope : Variables declared inside the scope(They can be accessed ONLY inside the function)
+
+//VAR IS FUNCTIONALLY SCOPED
+
+//LET AND CONST IS BLOCK SCOPED (Variable declared inside block cannot be accessed outside the block
+
+
+
+Q1. Datatypes in javascript
+Ans: Primitive and Objects
+file:///home/palak/Pictures/Screenshots/Screenshot%20from%202023-02-07%2016-51-39.png
+
+Today's Update(3/2/23):  Moksha Shah, Ekta Kakadia, Nirmal Patel
+1. Completed Single Page Application
+2. Revised some concepts of JS
+
+Blocker : None
+
+Tomorrow's Plan : 
+1. Continue learning JS
+2. Start with crud operation
+
+Today's Update(8/2/23): 
+1. Completed basic CRUD operations of task
+ 
+Blocker : None
+ 
+Tomorrow's Plan : 
+1. Continue with routing and other remaining functionalities
+
+Today's Plan (9/2/23) :
+1. Continue CRUD Operation Task
+2. Continue learning JS
+
+
+**********************************************************************************
+
+//Routing
+
+const routes = {
+   
+    404:{
+        template:"./pages/404.html",
+        title:"404"
+    },
+    "/":{
+        template:"./pages/form.html",
+        title:"Form"
+    },
+    display:{
+        template:"./pages/display.html",
+        title:"Products"
+    }
+}
+
+const locationHandler = async () => {
+    var location = window.location.hash.replace("#","");
+    console.log(location)
+    if(location.length==0 || location=="#"){
+        location = "/"
+    }
+
+    const route = routes[location] || routes[404];
+    const html = await fetch(route.template).then((response)=>response.text());
+
+    if(window.location.hash=="#display"){
+        showData()
+    }
+    document.getElementById("content").innerHTML = html;
+    document.title = route.title
+}
+
+window.addEventListener("hashchange",locationHandler)
+locationHandler();
+
+
+
+*************************************************************************************************
+The "require" attribute is used in this code snippet as part of a module import statement 
+The reason we use the "require" attribute here is to load the image file into our JavaScript application so that we can use it in our code. 
+Without the "require" attribute, we would not be able to access the contents of the image file and display it in our application.
+****************************************************************************************************
+
+
+Jxb$b3xn=.kRn($j
+#2C@Odh6isO7B#ySKL9Vp
+
+  // document.getElementById("prodimage").value = localStorage.getItem(productList[index].id)
+    a.name>b.name ? -1 : a.name < b.name ? 1 : 0 
+	
+	
+	  .image-url{
+    display:flex;
+    flex-direction:column;
+  }
+  .imgurl{
+    margin-bottom:5px;
+    width:100px;
+  }
+  
+  
+  Today's Update(24/2/23): Moksha Shah, Ekta Kakadia, Nirmal Patel
+1. Completed Fundamentals of web programming
+
+Blocker: none
+
+When we are using other's page
+!important
+math
+attr selector
+
+
+
+	
+	
+	Navbar - Practical 2
+	Table
+	
+	
+	ref and reactive
+	one way binding
+	substr : start and length  substring: start index and end index
+	difference between slice and substring
+	git fetch
+	git stash pop apply drop
+	git diff
+	rebase
+	git remote
+	
+	area expanded = false
+	
+	git stash | apply (num) | push -m "" | drop (index) |  pop | clear
+	git stash list
+	
+	
+	https://imgd.aeplcdn.com/1200x900/n/cw/ec/112947/wagon-r-2022-exterior-right-front-three-quarter.jpeg
+	
+	pseudo class, elements
+	website layout
+	option vs compostion
+	
+	custom directive (imp)
+		custom vue directive (imp)
+	pinia
+	what is new in Vue3
+	web accessibility (imp)
+	
+	
+	get-car change in Exp 3
+	edit-car
+	
+	
+	In exp 3 i should keep entering price compulsory or optional
+	
+	return status code
+preflight
+xhr	
+
+	Navigation like that 
+	login using post
+	     
+		 
+		 innertext
+		 Authentication, Lgoin in website
+		 Firebase performs authentications
+		 Axios - how postman is used
+
+
+
+
+
+
+
+.then .catch in login register
+not all the image getting accepted
+
+subscribing to actions
+
+
+
+In which scenario I have to write then and catch both
+git bash
+git pull vs git fetch
+
+
+description, grid
+
+
+*************************************
+Registration form .number in v-model
+login ,add hover
+change match spelling
+
+Why we use getters in Pinia
+
+
+
+Practical-7: x:-100
+
+
+media query from bootstrap
+ why we use JS config.json, babel.config
+ Vue2 vs vue3 difference.
+ readme.md
+ 
+ add alt in Image.
+ name not similar to bootstrap 
+ repeating css in car-card in media query
+ space between hr and cars_info
+ 
+ Axios is a JavaScript library that is used to send requests from the browser to APIs.
+ “Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.”
+ 
+ 
+ complete Udemy
+ 3
+
+
+EXPLORE Practical-7
+LEARN authentications
+Revise VueJS
+
+
+		
+		********************************
+		
+
+		
+		
+		add... to more than 120 words
+		space between description and info 
+		
+		
+		eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c    display: -webkit-box;
+   
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
+    width: 350px;
+    text-align: center;
+
+}
+
+
+px vs rem
+vue lifecycle
+diff v-if v-show-model
+v-for v-if diff 
+api fetch xhrcookie
+jwt token
+why use vue router
+diff vue2 vue3
+composition and option API
+OPACITY
+COMPUTED VS WATCHER
+COMMUNICATE BETWEEN COMPONENTS
+WHAT IS EVENT HANDLING
+REF VS REACTIVE
+WHY NEED TO USE API ? Oher option than API
+vue.config.js - code 
+session vs localStorage
+git ignore .* syntax
+
+
+
+created -> beforRouteEnter
+creating chunks in index.js vue router
+implementing nprogress
+
+npm i nprogress
+npm i -D rollup-plugin-visualizer
+npm i -g vercel
+vercel login
+vercel
+
+life cycle hooks
+cookie from w3schools.
+dom vs v-dom
+javascript frameworks type
+ecma script
+diff vanilla js vs pure js.
+what is PWA 
+margin : 0 auto;  css trics
+
+
+
+
+
+
+
+
+postman- Pass data in body or query
+headers , body , params
+option for getting dummy token.   //mokbin, jwt,reqres
+Explore postman tool (tutorial)
+If I want to get secure data which method should I use
+volar
+
+javascript 10 frameworks
+********************
+
+
+ const res = await axios({
+                            method: 'post',
+                            url: 'https://mockbin.org/bin/4e60a3ab-65bc-4cad-8de8-71fa74537912/view',
+                            headers: {
+                                'Access-Control-Allow-Origin': '*'
+                            },
+                            data: {
+                                email: userData.email,
+                                password: userData.password
+                            }
+                        });
+						
+						
+						
+						 try {
+                            const res = await axios.post('https://reqres.in/api/login', {
+                                email: "eve.holt@reqres.in",
+                                password: "cityslicka"
+                            })
+                            document.cookie = `token=${res.data.token}`
+                            document.cookie = 'loggedIn = true'
+                            this.loggedIn = "true"
+                        }
+                        catch (err) {
+                            document.cookie = `tokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c`
+                            document.cookie = 'loggedIn = true'
+                            this.loggedIn = "true"
+                        }
+						
+						
+						
+token comes with only one url.
+
+ build: {
+      outDir: isProduction ? 'dist/prod' : isStaging ? 'dist/stage' : 'dist',
+      assetsDir: isProduction ? 'prod/assets' : isStaging ? 'stage/assets' : 'assets',
+    },
+	
+	
+	************************************************
+rgb(35, 177, 172)
+
+rgb(220, 73, 73)
+
+
+authetication firebase
+lifecycle.
+nvm and npm
+~esLint
+~if I do local commit and system crashes and if 
+~component name naming convention
+WHY YOU NEED TO MAKE GOOD README FILE
+postman tutorial
+
+
+	
+	dob
+	
+
+	
+	********************************************************
+onbeforeRouteUpdate
+
+4 cars in row
+
+response.data
+
+p-4 .car media
+
+formtypr props
+
+
+
+
+# Car Gallery
+
+This is a Car Gallery System which is developed using JavaScript's Popular Framework "VueJS".
+
+It has following features:
+
+* Login Form
+* Registration Form
+* Car Information Card
+* Car Details Page
+* Add Car Form
+* Edit Car Form
+
+This whole website is developed using Options API of VueJS
+
+## Build Setup
+
+```bash
+  # install dependencies
+  npm install 
+
+  # serve with hot reload
+  npm run dev
+  
+  #build for staging
+  npm run build:stage
+
+  #build for production 
+  npm run build:prod
+
+```
+## Tools and Technology used
+* Vue
+* Vue Router
+* Pinia
+* Axios
+* GSAP
+<p align="left">
+<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/122871082/234210479-a4709c0e-2171-49ef-a126-4823d580b663.png" alt="VueJS"  height="70"/> </a>
+<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/122871082/234210570-d0efe908-eb55-48d9-840d-a2c0527b1acf.jpg" alt="Pinia"  height="70"/> </a>
+<a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/122871082/234214715-2af2c5dc-3184-4518-954a-2179457e908f.png" alt="Axios"  height="70"/> </a> 
+<a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/122871082/234215832-e7716a45-5fc6-4ea4-a1f5-a0a93c0d23b5.png" alt="vuejs"  height="70"/> </a> 
+</p>
+
+## Live Link
+
+https://car-showroom-09.netlify.app/
+
+
+
+
+
+^4.1.4 package.json ~ vs ^ difference
+2023 best framework
+
+    <RouterLink class="link" :to="{ name: 'home' }">Home</RouterLink>
+                <RouterLink class="link" :to="{ name: 'login' }">Login</RouterLink>
+                <RouterLink class="link link-register" :to="{ name: 'register' }">Register</RouterLink>
+				
+				
+				
+vite vs vueCLI
+one way binding two way binding
+
+
+
+style login
+
+
+
+remove alert from login successfull
+
+
+https://images.unsplash.com/photo-160
+
+
+make spacing
+add car - font increase
+description - padding
+
+
+px vs rem
+pinia vs vuex
+getters setters in pinia?
+promises
+event modifiers
+how do we get response when we use 
+difference between props vd data
+mounted vs created
+difference between let,var const
+what is vite
+dependency injection -props drilling
+plugins.
+v-directives
+watchers.
+
+
+2-4 -> props
+4-4:30 -> project
+
+app.vue->
+
+destroy unmounted
+plugins are top/ global functionality
+unmount example.
+
+
+Calculator : 
+Update log and ln functionality
+Update pi, e power functionality
+Changes in UI
+Changes in comments
+
+
+SPA:
+Changes in UI
+Service Page font update
+Changes in responsiveness
+
+CRUD:
+ Changes in Image Update Functionality
+ Made form responsiveness
+ Optimization in script file
+ Minor change in update
+ 
+ [17/01 14:13] Moksha Shah
+
+
+
+
+Whenever they apply leave tell them to follow this steps:
+
+1.Post it in leave request channel tagging responsible person(Mentor, Co-ordinator/ TM whoever is applicable)
+
+2. Send an email for the same by keeping Mentor, Co-ordinator/ TM whoever is applicable, and HR in cc(anjali@simformsolutions.com, vishva@simformsolutions.com)
+
+
+I humbly request to grant me leave on 12th and 15th May, 2023 as I have to attend family function. I assure that I will catch up on my learning that I will miss.
+Thank you.
+
+5084bde1-1766-4036-9310-7298e84aef6f
+
+
+
+SUPABASE_URL = "https://yhadyazupuvyaqngvxtr.supabase.co"
+SUPABASE_KEY= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InloYWR5YXp1cHV2eWFxbmd2eHRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODI1MDI2NTQsImV4cCI6MTk5ODA3ODY1NH0.DWH4WPMFMLefG9QXsLFpDCilBwP9hwETpH1CnXJnmUQ"
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+DATABASE_URL="postgres://postgres:cS7WGZyflCOIlHHm@db.yhadyazupuvyaqngvxtr.supabase.co:6543/postgres"
+
+****************************************************
+
+
+useFetch or axios
+
+ 
+composable for what?
+
+nuxtStorage.localStorage.getData('loggedIn')
+http://localhost:3002/details/1867
+
+sever
+workflow of server side rendering
+vue CLI vs vite
+
+can I use mixin and composable both
+router in Nuxt
+
+try {
+    const { data: car } = await useFetchCar(route.params.id)
+    carStore.carDetail = car
+}
+catch {
+    throw createError({
+        statusCode: 404,
+        statusMessage: `Car not found with id ${route.params.id}`,
+    })
+}
+
+**********************
+
+
+// const { id } = useRoute().params
+// const car_uri = `https://testapi.io/api/dartya/resource/cardata/${id}`
+// const { data: car } = await useFetch(car_uri, { key: id })
+// const cars_uri = `https://testapi.io/api/dartya/resource/cardata`
+// const { data: cars } = await useFetch(cars_uri)
+// console.log(car.value)
+// console.log(cars.value)
+// const data = cars.value.data.find(data => data.id == route.params.id)
+// if (!data) {
+//     console.log("no data")
+//     throw createError({
+//         statusCode: 404,
+//         statusMessage: `Car Not Found with id ${route.params.id}`,
+//         fatal: true
+//     })
+// }
+
+
+
+********************
+// carStore.getCarDetail(route.params.id)
+    // const { id } = useRoute().params
+    // const car_uri = `https://testapi.io/api/dartya/resource/cardata/${id}`
+
+    // const { data: cars } = await useFetchCar(route.params.id)
+    // console.log(cars.value)
+    // const cars_uri = `https://testapi.io/api/dartya/resource/cardata`
+    // const { data: carss } = await useFetch(cars_uri)
+    // console.log(carss.value)
+    // const present = cars.value.data.find(data => data.id == route.params.id)
+    // if (!present) {
+    //     console.log("no data")
+    //     throw createError({
+    //         statusCode: 404,
+    //         statusMessage: `Car Not Found with id ${route.params.id}`,
+    //         fatal: true
+    //     })
+    // }
+	
+	
+	cusor:pointer
+
+{
+    "name": "Mercedes demo",
+    "details": "dfgbhsn bgdfsgfdfbgdfghdfghdfghg",
+    "image": "https://www.freeiconspng.com/uploads/mercedes-car-png-16.png",
+    "price": "1234657",
+    "id": 1987,
+    "createdAt": "2023-05-18T13:33:35.000000Z",
+    "updatedAt": "2023-05-19T08:11:13.000000Z"
+}
+
+{"name":"sd","email":"sd@sd.sd","role":"employee","password":"sdsd1!sdsd","age":"32","dob":"2023-05-13","gender":"Female","id":435,"createdAt":"2023-05-19T10:46:52.000000Z","updatedAt":"2023-05-19T10:46:52.000000Z"}
+
+plugins in Nuxt
+rendering system
+composable vs mixin
+
+# Using npm
+npm install @nuxtjs/i18n@next --save-dev
+
+# Using yarn
+yarn add --dev @nuxtjs/i18n@next
+
+# Using pnpm 
+pnpm install --shamefully-hoist -D @nuxtjs/i18n@next
+
+
+doubt
+
+[id].vue page
+1. How I have used axios
+2. used useState for register and addCar
+3. global mixin
+
+axios using either plugin or direct
+
+
+coding standard
+communication
+
+
+Nuxt 1i8n
+remove commented code
+Fomatting
+
+ask 
+use axios with axios or uneNuxtApp().$
+
+VueUse
+rendering mode
+
+submit in LMS tash till 9
+generate PR for Nuxt
+
+
+git commit -m "Car Gallery Project with Nuxt for Deployment"
+http://localhost:3000/details/2072
+video 73
+describe('Sanity test', () => {
+    it('visit the app root url', () => {
+        cy.visit('/')
+        cy.contains('#header a:first-child', 'Music')
+    })
+})
+
+
+v-app in child component
+
+
+remove extra props form GalleryCard.vue
+
+testUtilities      test-utils
+set common url 
+composable
+
+current version of TS
+difference betweennever and void
+
+
+
+
+Know about provide / inject and how to use it.
+Have a basic understanding of Teleport and how to use it.
+Know about Fragments and how to go about using them.
+Know about the changes made to the Global Vue API.
+Know about the changes made to the Events API.
+
+
+Teleport
+Some of the components breaking changes
+Fragments
+Filters were removed from Vue 3
+Experimental Suspense feature
+Experimental state-driven CSS variables
+Single file component <style scoped> changes
+Multiple v-models
+Lifecycle naming changes
+<template> render changes
+Moment JS
+https://medium.com/nerd-for-tech/global-filter-using-momentjs-in-vue3-513077700d5
+https://medium.com/nerd-for-tech/global-filter-using-momentjs-in-vue3-513077700d5
+
+Whats new in Vue3
